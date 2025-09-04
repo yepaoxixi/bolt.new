@@ -103,7 +103,7 @@ function navigateChat(nextId: string) {
    * `navigate(`/chat/${nextId}`, { replace: true });`
    */
   const url = new URL(window.location.href);
-  url.pathname = `/chat/${nextId}`;
+  url.pathname = `/bolt/chat/${nextId}`;
 
   window.history.replaceState({}, '', url);
 }
